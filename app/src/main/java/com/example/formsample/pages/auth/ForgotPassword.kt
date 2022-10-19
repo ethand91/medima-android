@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.formsample.component.CustomTopAppBar
+import com.example.formsample.nav.BottomNavBar
 
 @Composable
 fun ForgotPassword(navController: NavController) {
@@ -29,6 +30,7 @@ fun ForgotPassword(navController: NavController) {
                 title = "Forgot Password",
                 showBackIcon = true
             )},
+            bottomBar = { BottomNavBar(navController = navController) },
             content = {
                 Column(
                     modifier = Modifier.padding(20.dp),
